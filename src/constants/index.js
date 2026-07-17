@@ -3,18 +3,18 @@ const navLinks = [
     name: "Work",
     link: "#work",
   },
-  {
-    name: "Experience",
-    link: "#experience",
-  },
+  // {
+  //   name: "Experience",
+  //   link: "#experience",
+  // },
   {
     name: "Skills",
     link: "#skills",
   },
-  {
-    name: "Testimonials",
-    link: "#testimonials",
-  },
+  // {
+  //   name: "Testimonials",
+  //   link: "#testimonials",
+  // },
 ];
 
 const words = [
@@ -29,10 +29,10 @@ const words = [
 ];
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
+  { value: 1, suffix: "+", label: "Years of Programming" },
+  { value: 500, suffix: "+", label: "Hours of C++ Development" },
+  { value: 4, suffix: "", label: "Unreal Engine Projects" },
+  { value: 100, suffix: "+", label: "DSA Problems Solved " },
 ];
 
 const logoIconsList = [
@@ -79,13 +79,13 @@ const abilities = [
   },
   {
     imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    title: "Problem Solving",
+    desc: "Breaking down complex technical challenges into scalable and efficient solutions.",
   },
   {
     imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    title: "Project Discipline",
+    desc: "Completing projects on schedule without compromising quality or attention to detail.",
   },
 ];
 
@@ -114,35 +114,25 @@ const techStackImgs = [
 
 const techStackIcons = [
   {
-    name: "React Developer",
-    modelPath: "/models/react_logo-transformed.glb",
-    scale: 1,
-    rotation: [0, 0, 0],
-  },
-  {
-    name: "Python Developer",
+    name: "Python (AI and ML)",
     modelPath: "/models/python-transformed.glb",
     scale: 0.8,
     rotation: [0, 0, 0],
   },
   {
-    name: "Backend Developer",
-    modelPath: "/models/node-transformed.glb",
-    scale: 5,
+    name: "Unreal Engine Developer",
+    modelPath: "/models/unreal_engine_logo.glb",
+    scale: 0.012,
     rotation: [0, -Math.PI / 2, 0],
+    position: [0, -1.5, 0]
   },
   {
-    name: "Interactive Developer",
-    modelPath: "/models/three.js-transformed.glb",
-    scale: 0.05,
+    name: "C++ Developer",
+    modelPath: "/models/cpp.glb",
+    scale: 0.08,
     rotation: [0, 0, 0],
-  },
-  {
-    name: "Project Manager",
-    modelPath: "/models/git-svg-transformed.glb",
-    scale: 0.05,
-    rotation: [0, -Math.PI / 4, 0],
-  },
+  }
+
 ];
 
 const expCards = [

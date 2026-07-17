@@ -49,10 +49,9 @@ const Hero = () => {
               <h1>into Real Projects</h1>
               <h1>that Deliver Results</h1>
             </div>
-
-            <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Hi, I’m Adrian, a developer based in Croatia with a passion for
-              code.
+            <p className="max-w-2xl text-white-50 md:text-xl relative z-10 pointer-events-none">
+               Hi, I'm Abhigyan, a C++ and Unreal Engine developer from India with a strong
+               foundation in Data Structures & Algorithms and a passion for gameplay programming.
             </p>
 
             <Button
