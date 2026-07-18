@@ -104,47 +104,9 @@ const AppShowcase = () => {
             </div>
           </div>
 
-          {/* Advanced Locomotion */}
-          <div ref={locomotionRef} className="first-project-wrapper mt-20">
-            <div className="image-wrapper overflow-hidden rounded-2xl">
-              <iframe
-                className="w-full aspect-video"
-                src="https://www.youtube.com/embed/-5hWA1WshgI"
-                title="Advanced Locomotion System"
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            </div>
-
-            <div className="text-content">
-              <h2>
-                Advanced Locomotion System
-                <span className="ml-3 text-sm text-yellow-400">
-                  • Work in Progress
-                </span>
-              </h2>
-
-<p className="text-white-50 md:text-xl">
-  A cinematic third-person traversal system built in Unreal Engine 5 using
-  Blueprints and industry-standard animation plugins. Inspired by the movement
-  mechanics of modern AAA action-adventure games, the project features fluid
-  climbing, mantling, ledge traversal, obstacle vaulting, advanced animation
-  layering, inverse kinematics (IK), and responsive character movement,
-  delivering a seamless and immersive exploration experience.
-</p>
-
-              <div className="flex flex-wrap gap-4 mt-6">
-                <a
-                  href="https://youtu.be/-5hWA1WshgI"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-6 py-3 rounded-lg border border-white/20 hover:bg-white/10 transition-colors text-white font-semibold"
-                >
-                  Watch on YouTube
-                </a>
-              </div>
-            </div>
+          {/* Placeholder for another project */}
+          <div ref={locomotionRef} className="second-project-wrapper">
+            {/* Add your second project here */}
           </div>
 
         </div>
