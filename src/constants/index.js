@@ -71,23 +71,6 @@ const logoIconsList = [
   },
 ];
 
-const abilities = [
-  {
-    imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
-  },
-  {
-    imgPath: "/images/chat.png",
-    title: "Problem Solving",
-    desc: "Breaking down complex technical challenges into scalable and efficient solutions.",
-  },
-  {
-    imgPath: "/images/time.png",
-    title: "Project Discipline",
-    desc: "Completing projects on schedule without compromising quality or attention to detail.",
-  },
-];
 
 const techStackImgs = [
   {
