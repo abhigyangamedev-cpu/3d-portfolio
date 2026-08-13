@@ -15,6 +15,11 @@ const navLinks = [
   //   name: "Testimonials",
   //   link: "#testimonials",
   // },
+
+    {
+    name: "GitHub",
+    link: "https://github.com/abhigyangamedev-cpu",
+  },
 ];
 
 const words = [
