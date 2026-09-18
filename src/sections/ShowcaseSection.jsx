@@ -1,3 +1,4 @@
+
 import { useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -7,8 +8,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const AppShowcase = () => {
   const sectionRef = useRef(null);
-  const combatRef = useRef(null);
-  const locomotionRef = useRef(null);
 
   useGSAP(() => {
     gsap.fromTo(
@@ -16,142 +15,16 @@ const AppShowcase = () => {
       { opacity: 0 },
       { opacity: 1, duration: 1.5 }
     );
-
-    gsap.fromTo(
-      combatRef.current,
-      {
-        y: 50,
-        opacity: 0,
-      },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 1,
-        scrollTrigger: {
-          trigger: combatRef.current,
-          start: "top bottom-=100",
-        },
-      }
-    );
-
-    gsap.fromTo(
-      locomotionRef.current,
-      {
-        y: 50,
-        opacity: 0,
-      },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 1,
-        scrollTrigger: {
-          trigger: locomotionRef.current,
-          start: "top bottom-=100",
-        },
-      }
-    );
   }, []);
 
   return (
     <section id="work" ref={sectionRef} className="app-showcase">
       <div className="w-full">
-        <div className="showcaselayout">
-
-          {/* Combat Framework */}
-          <div ref={combatRef} className="first-project-wrapper">
-            <div className="image-wrapper overflow-hidden rounded-2xl">
-              <iframe
-                className="w-full aspect-video"
-                src="https://www.youtube.com/embed/jVdFgeazs7E"
-                title="Unreal Engine Combat Framework"
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            </div>
-
-            <div className="text-content">
-              <h2>Unreal Engine 5 Combat Framework</h2>
-
-              <p className="text-white-50 md:text-xl">
-                A production-oriented combat framework developed using Unreal
-                Engine 5 with a hybrid C++ and Blueprint architecture. Features
-                include the Gameplay Ability System (GAS), advanced enemy AI,
-                combo attacks, hit reactions, weapon system, inventory
-                integration, boss mechanics, animation notifies, gameplay tags,
-                and a scalable architecture for RPG and action games.
-              </p>
-
-              <div className="flex flex-wrap gap-4 mt-6">
-                <a
-                  href="https://drive.google.com/drive/folders/1beLWylImVWHIqslvRkqGdWeR3txzQj2H?usp=drive_link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-700 transition-colors text-white font-semibold"
-                >
-                  Live Demo
-                </a>
-
-                <a
-                  href="https://youtu.be/jVdFgeazs7E"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-6 py-3 rounded-lg border border-white/20 hover:bg-white/10 transition-colors text-white font-semibold"
-                >
-                  Watch on YouTube
-                </a>
-              </div>
-            </div>
-          </div>
-
-{/* Inventory Plugin */}
-<div ref={locomotionRef} className="second-project-wrapper">
-  <div className="image-wrapper overflow-hidden rounded-2xl">
-    <iframe
-      className="w-full aspect-video"
-      src="https://www.youtube.com/embed/CA0JN36f3iE"
-      title="Unreal Engine 5 Inventory Plugin"
-      loading="lazy"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    />
-  </div>
-
-  <div className="text-content">
-    <h2>Unreal Engine 5 Inventory Plugin</h2>
-
-    <p className="text-white-50 md:text-xl">
-      A modular inventory plugin developed in Unreal Engine 5 using C++ with
-      Blueprint support. The plugin features stackable items, equipment
-      management, drag-and-drop functionality, data-driven item definitions,
-      save/load support, and a reusable architecture that can be integrated into
-      RPG, survival, and action games.
-    </p>
-
-    <div className="flex flex-wrap gap-4 mt-6">
-      <a
-        href="#"
-        className="px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-700 transition-colors text-white font-semibold"
-      >
-        Coming Soon
-      </a>
-
-      <a
-        href="https://youtu.be/CA0JN36f3iE"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="px-6 py-3 rounded-lg border border-white/20 hover:bg-white/10 transition-colors text-white font-semibold"
-      >
-        Watch on YouTube
-      </a>
-    </div>
-  </div>
-</div>
-
-        </div>
+        <div className="showcaselayout"></div>
       </div>
     </section>
   );
 };
 
 export default AppShowcase;
+
