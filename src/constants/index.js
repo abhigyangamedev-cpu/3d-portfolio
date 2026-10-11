@@ -144,12 +144,6 @@ const techStackImgs = [
 
 const techStackIcons = [
   {
-    name: "Python (AI and ML)",
-    modelPath: "/models/python-transformed.glb",
-    scale: 0.8,
-    rotation: [0, 0, 0],
-  },
-  {
     name: "Unreal Engine Developer",
     modelPath: "/models/unreal_engine_logo.glb",
     scale: 0.012,
