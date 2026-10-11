@@ -1,6 +1,6 @@
 /**
  * A reusable CTA button component.
- * When clicked, it scrolls smoothly to the section with ID "counter",
+ * When clicked, it scrolls smoothly to the section matching the given id,
  * with a small offset from the top for better visual placement.
  */
 
@@ -10,7 +10,7 @@ const Button = ({ text, className, id }) => {
       onClick={(e) => {
         e.preventDefault(); // Stop the link from jumping instantly
 
-        const target = document.getElementById("counter"); // Find the section with ID "counter"
+        const target = document.getElementById(id); // Find the section matching the passed-in ID
 
         // Only scroll if we found the section and an ID is passed in
         // taht prevents the contact button from scrolling to the top

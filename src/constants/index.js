@@ -33,13 +33,6 @@ const words = [
   { text: "Code", imgPath: "/images/code.svg" },
 ];
 
-const counterItems = [
-  { value: 1, suffix: "+", label: "Years of Programming" },
-  { value: 500, suffix: "+", label: "Hours of C++ Development" },
-  { value: 4, suffix: "", label: "Unreal Engine Projects" },
-  { value: 100, suffix: "+", label: "DSA Problems Solved " },
-];
-
 const logoIconsList = [
   {
     imgPath: "/images/logos/company-logo-1.png",
@@ -73,24 +66,6 @@ const logoIconsList = [
   },
   {
     imgPath: "/images/logos/company-logo-11.png",
-  },
-];
-
-const abilities = [
-  {
-    imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
-  },
-  {
-    imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
-  },
-  {
-    imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
   },
 ];
 
@@ -261,9 +236,7 @@ const socialImgs = [
 
 export {
   words,
-  abilities,
   logoIconsList,
-  counterItems,
   expCards,
   expLogos,
   testimonials,
