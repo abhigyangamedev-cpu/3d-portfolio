@@ -33,6 +33,55 @@ const words = [
   { text: "Code", imgPath: "/images/code.svg" },
 ];
 
+const fpsProject = {
+  title: "Multiplayer FPS — Unreal Engine 5 & C++",
+  videoId: "JE_cdeTnj7Q",
+  summary:
+    "A networked, server-authoritative first-person shooter built in Unreal Engine 5 as a single C++ module (~4,500 lines across 53 files). Gameplay rules, combat, health, scoring and UI logic all live in C++; Blueprints only supply assets, styling and visual effects.",
+  stats: [
+    { value: "4.5K", label: "Lines of C++" },
+    { value: "53", label: "Source files" },
+    { value: "10", label: "Special elim types" },
+    { value: "LAN", label: "Host & join by IP" },
+  ],
+  highlights: [
+    {
+      title: "Server-authoritative networking",
+      desc: "Damage, health, ammo, score and the match clock are decided on the server and replicated down. Clients predict fire animations, impacts and ammo, then reconcile with the server.",
+    },
+    {
+      title: "Component-based character",
+      desc: "A thin pawn delegates to Combat, Health and Elimination components. Weapons and widgets reach it only through a PlayerInterface, so nothing depends on the concrete class.",
+    },
+    {
+      title: "Hitscan combat & ammo prediction",
+      desc: "Sphere-swept traces on a custom weapon channel, headshot damage, auto/semi-auto fire and sequence-based client ammo prediction that never jumps back under latency.",
+    },
+    {
+      title: "Special eliminations",
+      desc: "A uint16 bit-flag system detects headshots, streaks, revenge, first blood, multi-kills and lead changes on the server, then queues callouts on the owning client.",
+    },
+    {
+      title: "Match flow",
+      desc: "10-minute rounds, first to 40 eliminations, spawn protection with a draining overhead bar, 3 s respawns at random spawn points and a win/lose/draw screen.",
+    },
+    {
+      title: "C++ HUD, Blueprint visuals",
+      desc: "Every HUD element is a C++ widget base with BindWidget slots that survives respawns and late replication: reticle, ammo counter, floating damage numbers, timer and score.",
+    },
+  ],
+  tags: [
+    "C++",
+    "Unreal Engine 5",
+    "Replication & RPCs",
+    "Gameplay Framework",
+    "Enhanced Input",
+    "UMG",
+    "Gameplay Tags",
+    "Data Assets",
+  ],
+};
+
 const logoIconsList = [
   {
     imgPath: "/images/logos/company-logo-1.png",
@@ -235,6 +284,7 @@ const socialImgs = [
 ];
 
 export {
+  fpsProject,
   words,
   logoIconsList,
   expCards,
