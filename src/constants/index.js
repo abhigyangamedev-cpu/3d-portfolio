@@ -179,6 +179,18 @@ const techStackIcons = [
     modelPath: "/models/cpp.glb",
     scale: 0.08,
     rotation: [0, 0, 0],
+  },
+  {
+    name: "LeetCode Problem Solver",
+    modelPath: "/models/leetcode.glb",
+    scale: 1.6,
+    rotation: [0, 0, 0],
+  },
+  {
+    name: "Competitive Programmer",
+    modelPath: "/models/cp-logo.glb",
+    scale: 1.1,
+    rotation: [0, 0, 0],
   }
 
 ];
