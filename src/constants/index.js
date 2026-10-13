@@ -11,6 +11,10 @@ const navLinks = [
     name: "Skills",
     link: "#skills",
   },
+  {
+    name: "DSA",
+    link: "#dsa",
+  },
   // {
   //   name: "Testimonials",
   //   link: "#testimonials",
@@ -80,6 +84,26 @@ const fpsProject = {
     "Gameplay Tags",
     "Data Assets",
   ],
+};
+
+const lcDifficulties = [
+  { label: "Easy", color: "#00b8a3" },
+  { label: "Medium", color: "#ffc01e" },
+  { label: "Hard", color: "#ef4743" },
+];
+
+// Codeforces rank -> the colour Codeforces shows it in
+const cfRankColors = {
+  newbie: "#a0a0a0",
+  pupil: "#3cb371",
+  specialist: "#03a89e",
+  expert: "#5b7cff",
+  "candidate master": "#b65bff",
+  master: "#ff8c00",
+  "international master": "#ff8c00",
+  grandmaster: "#ff3333",
+  "international grandmaster": "#ff3333",
+  "legendary grandmaster": "#ff3333",
 };
 
 const logoIconsList = [
@@ -279,6 +303,8 @@ const socialImgs = [
 
 export {
   fpsProject,
+  lcDifficulties,
+  cfRankColors,
   words,
   logoIconsList,
   expCards,
