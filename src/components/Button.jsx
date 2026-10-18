@@ -2,12 +2,18 @@
  * A reusable CTA button component.
  * When clicked, it scrolls smoothly to the section matching the given id,
  * with a small offset from the top for better visual placement.
+ * If an href is passed in, it opens that external link in a new tab instead.
  */
 
-const Button = ({ text, className, id }) => {
+const Button = ({ text, className, id, href }) => {
   return (
     <a
+      href={href}
+      target={href ? "_blank" : undefined}
+      rel={href ? "noopener noreferrer" : undefined}
       onClick={(e) => {
+        if (href) return; // Let external links open normally
+
         e.preventDefault(); // Stop the link from jumping instantly
 
         const target = document.getElementById(id); // Find the section matching the passed-in ID

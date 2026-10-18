@@ -53,11 +53,18 @@ const Hero = () => {
                foundation in Data Structures & Algorithms and a passion for gameplay programming.
             </p>
 
-            <Button
-              text="See My Work"
-              className="md:w-80 md:h-16 w-60 h-12"
-              id="work"
-            />
+            <div className="flex flex-wrap gap-5">
+              <Button
+                text="See My Work"
+                className="md:w-80 md:h-16 w-60 h-12"
+                id="work"
+              />
+              <Button
+                text="Go to Resume"
+                className="md:w-80 md:h-16 w-60 h-12"
+                href="https://claude.ai/artifact/LGCTLDdEuURc3Ufh3yrJKH"
+              />
+            </div>
           </div>
         </header>
 
