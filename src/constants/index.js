@@ -86,6 +86,57 @@ const fpsProject = {
   ],
 };
 
+const warriorProject = {
+  title: "Warrior — Melee Action with GAS, UE 5.5 & C++",
+  videoId: "aSICYSr6dio",
+  summary:
+    "A third-person melee action game in Unreal Engine 5.5 built on the Gameplay Ability System. An axe-wielding hero fights waves of AI enemies in a survival arena. C++ provides the framework (characters, a custom ability system component, attributes, damage math, input routing, combat components, AI nodes and the wave director) while Blueprints build the concrete abilities, montages and widgets on top of it.",
+  stats: [
+    { value: "5.4K", label: "Lines of C++" },
+    { value: "102", label: "Source files" },
+    { value: "77", label: "Native gameplay tags" },
+    { value: "4", label: "Difficulty levels" },
+  ],
+  highlights: [
+    {
+      title: "Data-driven Gameplay Ability System",
+      desc: "Characters load a StartUp data asset that grants abilities and effects to a custom ASC. Nothing in the hero's C++ knows which abilities exist; difficulty simply changes the level they are granted at.",
+    },
+    {
+      title: "Tag-routed input",
+      desc: "Enhanced Input actions map to gameplay tags. The ASC matches them to ability specs, with Toggleable tags cancelling on a second press and MustBeHeld tags cancelling on release.",
+    },
+    {
+      title: "Combat & damage pipeline",
+      desc: "Anim notifies open weapon collision, hits become gameplay events, and a custom execution calculation scales base damage by combo count and AttackPower ÷ DefensePower before the attribute set applies it.",
+    },
+    {
+      title: "Target lock & directional reactions",
+      desc: "A ticking ability task drives lock-on with left/right target switching. Hit reactions pick front, back, left or right from the attack angle, and blocks are validated against the defender's facing.",
+    },
+    {
+      title: "Enemy AI",
+      desc: "AI controllers with sight perception and Detour crowd avoidance, native behavior-tree nodes for facing targets, and randomised attack selection by tag. Bosses summon minions through a custom ability task.",
+    },
+    {
+      title: "Survival wave director",
+      desc: "A tick-driven game-mode state machine reads waves from a data table, async-preloads enemy classes and spawns them at random navigable points, while a push-based UI layer reacts through delegates.",
+    },
+  ],
+  tags: [
+    "C++",
+    "Unreal Engine 5.5",
+    "Gameplay Ability System",
+    "Gameplay Tags",
+    "Enhanced Input",
+    "Behavior Trees",
+    "AI Perception",
+    "Motion Warping",
+    "UMG",
+    "Data Assets",
+  ],
+};
+
 const lcDifficulties = [
   { label: "Easy", color: "#00b8a3" },
   { label: "Medium", color: "#ffc01e" },
@@ -315,6 +366,7 @@ const socialImgs = [
 
 export {
   fpsProject,
+  warriorProject,
   lcDifficulties,
   cfRankColors,
   words,
